@@ -1,0 +1,9 @@
+import random
+import threading 
+
+def voltage():
+ threading.Timer(5.0, voltage).start()
+ n = random.randint(220,240)
+ print(n)
+
+voltage()
